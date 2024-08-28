@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table 3</title>
+    <h1>JavaScript: Difference Null Vs undefined</h1>
+    <style>
+        table{
+            border-collapse: collapse;
+            padding: 10px;
+            margin: 10px;
+            width: "100%";
+        }
+
+        th {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+        }
+
+        td{
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+            <tr>
+                <th class="full-length" colspan="3">Null</th>
+            </tr>
+            <tr>
+                <th>Definition</th>
+                <th>Type</th>
+                <th>Uses</th>
+            </tr>
+      
+        <tr>
+            <td> null is an assignment value that represents the intentional absence of any object value. It is explicitly set by the programmer to indicate that a variable should have no value.</td>
+            <td>The type of null is "object" (this is actually a well-known bug in JavaScript; null is not truly an object).</td>
+            <td><pre>let y = null;
+                console.log(y); // null
+                </pre>
+            <pre>let user = { name: "Alice" };
+                user = null; // user is now 
+                empty or has no value
+                </pre></td>
+        </tr>
+        <tr>
+            <th class="full-length" colspan="3">undefined</th>
+        </tr>
+        <tr><td>undefined is a primitive value automatically assigned to variables that have been declared but not yet assigned a value. It also represents the absence of a value in certain cases, like when a function doesn’t return anything explicitly.</td>
+        <td>The type of undefined is "undefined".</td>
+        <td>A variable is declared but not assigned a value:<pre>let x;
+            console.log(x); // undefined
+            </pre>
+            A function that does not return a value:<pre>
+            function myFunction() {}
+console.log(myFunction()); // undefined
+
+        </pre>
+        Accessing a non-existent property of an object:<pre>
+        const obj = {};
+console.log(obj.nonExistentProperty); // undefined
+
+    </pre></td>
+        </tr>
+    </table>
+    
+</body>
+</html>

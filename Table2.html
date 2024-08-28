@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLE 2</title>
+    <h1>JavaScript: Difference Let Var Const</h1>
+    <style>
+       
+        table{  border-collapse: collapse;
+            border: 1px solid rgb(31, 35, 255);
+            padding: 10px;
+            margin: 10px;
+            width: "100%";
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(-20px);
+            
+        }
+        th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7); /* Make the cells slightly transparent */
+}
+
+      
+    </style>
+</head>
+<body>
+    <div class="table-container">
+    <table>
+        <tr>
+            <th>No.</th>
+            <th>let</th>
+            <th>var</th>
+            <th>Const</th>
+
+        </tr>
+        <tr>
+            <td>Scope</td>
+            <td>let is block-scoped, meaning it is only accessible within the block {} in which it is declared.</td>
+            <td>var is function-scoped, meaning it is accessible within the function where it is declared. If declared outside a function, it becomes globally scoped.</td>
+            <td> Like let, const is block-scoped.</td>
+        </tr>
+        <tr>
+            <td>Hoisting</td>
+            <td>let is also hoisted, but unlike var, it is not initialized with undefined. Accessing it before declaration results in a ReferenceError due to the temporal dead zone (TDZ).</td>
+            <td> Variables declared with var are hoisted to the top of their scope, meaning the declaration is moved to the top during the compile phase, but not the initialization.</td>
+            <td>const behaves similarly to let in terms of hoisting and the temporal dead zone.</td>
+        </tr>
+
+        <tr>
+            <td>Reassignment and Redeclaration</td>
+            <td>You can reassign a let variable, but you cannot redeclare it in the same scope.</td>
+            <td> You can reassign and redeclare a var variable within the same scope.</td>
+            <td> const is used to declare variables that cannot be reassigned. The variable itself cannot be reassigned, but if it is an object or array, the contents can be modified.</td>
+        </tr>
+
+        <tr>
+            <td>Example</td>
+            <td><pre>function example() {
+                console.log(y); // ReferenceError: 
+                Cannot access 'y' before initialization
+                let y = 20;
+                console.log(y); // 20
+            }
+            example();</pre></td>
+            <td><pre>function example() {
+                console.log(x); // undefined 
+                (due to hoisting)
+                var x = 10;
+                console.log(x); // 10
+            }
+            example();
+            </pre></td>
+            <td><pre>const z = 30;
+                z = 40; // TypeError: Assignment to constant variable.
+                
+                const obj = { key: 'value' };
+                obj.key = 'newValue'; // This is allowed
+                </pre></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

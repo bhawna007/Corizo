@@ -1,0 +1,132 @@
+<!-- cards2-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-frans-van-heerden-201846-624015.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+<!-- cards3-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-greggalasimage-2092828.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+<!-- cards4-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-therato-3408744.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+<!--cards5-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-therato-3408744.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <!---->
+
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-eberhardgross-534164.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+    <!--TILL HERE-->
+<!-- cards2-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-frans-van-heerden-201846-624015.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+<!-- cards3-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-greggalasimage-2092828.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+<!-- cards4-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-therato-3408744.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+<!--cards5-->
+    <div class="cards">
+        <div class="image">
+            <img src="pexels-therato-3408744.jpg" alt="image">
+        </div>
+        <div class="title">
+            <h1>Product Name</h1>
+        </div>
+
+        <div class="detail">
+            <p>The details of the product should go here...</p>
+            <button>Buy Now</button>
+        </div>
+    </div>

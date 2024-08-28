@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Image</title>
+    <style>
+        body {
+            background: url(https://images.pexels.com/photos/1903346/pexels-photo-1903346.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat fixed;
+            background-size: cover;
+        }
+        table{  border-collapse: collapse;
+            border: 1px solid rgb(31, 35, 255);
+            padding: 10px;
+            margin: 10px;
+            width: "100%";
+            background-color: rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(-20px);
+            
+        }
+        th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7); /* Make the cells slightly transparent */
+}
+
+th {
+    background-color: rgba(0, 123, 255, 0.7); /* Different color for headers */
+    color: white;
+}
+      
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>Unit</th>
+            <th>Definition</th>
+            <th>Usage</th>
+            <th>Pros</th>
+            <th>Cons</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>px(Pixels)</td>
+            <td>Pixels are absolute units. One pixel (px) is a fixed size on the screen, and it doesn't change regardless of other elements or screen size.</td>
+            <td>Use px when you need precise control over the size of an element, such as borders, images, or specific text sizes.</td>
+            <td>Consistent across different browsers and devices.</td>
+            <td>Less flexible, not responsive, and doesn't scale with user settings.</td>
+            <td>p {
+                font-size: 16px;
+              }</td>
+        </tr>
+        <tr>
+            <td>Percentage (%)</td>
+            <td>A percentage is a relative unit that defines size relative to the parent element's size.</td>
+            <td>Often used for fluid layouts, width settings, or when defining sizes relative to other elements.</td>
+        <td>Responsive and flexible, as the size adjusts based on the parent element.</td>
+        <td>Can be tricky to manage with nested elements and may lead to unexpected results if not carefully handled.</td>
+        <td>div {
+            width: 50%;
+          }</td>
+        </tr>
+        <tr>
+            <td>Root em (rem)</td>
+            <td> rem stands for "root em". It is relative to the root element (<html>) font size. If the root font size is 16px, then 1rem equals 16px.</td>
+            <td>Use rem when you want to ensure consistency across the entire document and allow easy scaling based on the root font size.</td>
+<td>Consistent scaling across the entire page, making it easier to adjust the entire document by changing the root font size.</td>
+       <td>Requires knowledge of the root font size for accurate calculations.</td>
+       <td>
+        p {
+        font-size: 1.5rem; /* 24px if root font size is 16px */
+      }</td>
+</tr>
+
+<tr>
+    <td>Em (em)</td>
+    <td>em is a relative unit, but it is relative to the font size of its parent element. If the parent font size is 16px, 1em equals 16px.</td>
+    <td>Useful when you want to size an element relative to its parent or for creating scalable components.</td>
+    <td>Flexible and can adapt to different contexts, making it great for scalable layouts.</td>
+    <td>Can be confusing when deeply nested, as the value of em compounds based on parent elements.</td>
+    <td>div {
+        font-size: 2em; /* 32px if the parent font size is 16px */
+      }</td>
+</tr>
+    </table>
+</body>
+</html>
