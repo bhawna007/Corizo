@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+
+}
+
+/* Container for the shopping list */
+.container {
+    max-width: 400px;
+    margin: 20vh auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+
+}
+
+/* Header Styles */
+header img {
+    width: 45px;
+    display: flex;
+    float: left;
+    /* position: relative; */
+    margin: auto;
+    /* display:inline-block; */
+
+}
+
+header h1 {
+    font-size: 40px;
+    color: #013125;
+}
+
+/* Form Styles */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0, 0, 15px rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, .4);
+   transition: .3s ease-in-out;
+}
+
+.btn i {
+    margin-right: 10px;
+}
+
+.btn:hover{
+    background-color: #00743e;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, .4);
+    background: #005716;
+	color: #fff;
+	transform: translatey(-5px);
+	transition: 0.4s;
+}
+
+
+/* Filter Input */
+.form-input-filter {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* List Styles */
+.items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.items li {
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.items li:hover {
+    background-color: #f0f0f0;
+}
+
+/* Remove Button Styles */
+.btn-link {
+    background: none;
+    border: none;
+    color: inherit;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.text-red {
+    color: #dc3545;
+}
+
+.btn-link i {
+    font-size: 18px;
+}
+
+/* Clear All Button */
+.btn-clear {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    box-shadow: 0px 8px 15px rgba(0,0,0,.4);
+    transition: 0.3s ease;
+}
+
+
+.btn-clear:hover{
+    box-shadow: 0px 15px 20px rgba(0,0,0,.4);
+	background: #e60036;
+	color: #fff;
+	transform: translatey(-5px);
+	transition: 0.4s;
+}
