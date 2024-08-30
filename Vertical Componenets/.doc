@@ -1,132 +1,32 @@
-<!-- cards2-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-frans-van-heerden-201846-624015.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
+.btn::after{
+    content:"";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left:0;
+    top:0;
+    border-radius: 10px;
+}
 
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-<!-- cards3-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-greggalasimage-2092828.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
+.btn::before{
+    content: "";
+    background: linear-gradient(45deg, #f00000,#ff7300,#fffb00,#48ff00,#00ffd5,#002bff,#ff00c8,#ff0000);
+position: absolute;
+top: -2px;
+left: -2px;
+background-size: 600%;
+z-index: -1;
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+filter: blur(8px);
+/*animations*/
+transition:opacity .3s ease-in-out;
+border-radius: 10px;
+opacity: 1;
+}
+@keyframes glowing{
 
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-<!-- cards4-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-therato-3408744.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
+}
 
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-
-<!--cards5-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-therato-3408744.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
-
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-
-    <!---->
-
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-eberhardgross-534164.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
-
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-
-    <!--TILL HERE-->
-<!-- cards2-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-frans-van-heerden-201846-624015.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
-
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-<!-- cards3-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-greggalasimage-2092828.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
-
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-<!-- cards4-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-therato-3408744.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
-
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
-
-<!--cards5-->
-    <div class="cards">
-        <div class="image">
-            <img src="pexels-therato-3408744.jpg" alt="image">
-        </div>
-        <div class="title">
-            <h1>Product Name</h1>
-        </div>
-
-        <div class="detail">
-            <p>The details of the product should go here...</p>
-            <button>Buy Now</button>
-        </div>
-    </div>
